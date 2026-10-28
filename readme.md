@@ -115,7 +115,13 @@ The registry is not tied to the OpenAI tool format: since it stores format-agnos
 
 The code depends on litellm, pydantic, pyyaml, and python-dotenv.
 
-Install dependencies from `requirements.txt`:
+The project is managed with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync
+```
+
+Alternatively, install the pinned dependencies with pip:
 
 ```bash
 pip install -r requirements.txt
