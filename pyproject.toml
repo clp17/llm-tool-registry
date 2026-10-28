@@ -1,0 +1,18 @@
+[project]
+name = "toolregistry"
+version = "0.1.0"
+description = "Tools with Registry Pattern for managing Python tools exposed to LLMs in the OpenAI-compatible tool format"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.106.5",
+    "mcp>=2.3.0",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+toolregistry = "toolregistry:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
